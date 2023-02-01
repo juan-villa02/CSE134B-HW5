@@ -1,0 +1,95 @@
+<!--Validates-->
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+        <meta charset = "utf-8" />
+        <meta name = "Description" content = "Contact - CSE 134B" />
+        <title> Juan Villanueva Romero </title>
+        <link rel = "icon" href = "images/favicon.ico">
+        <script>
+            
+        </script>
+</head>
+
+<body>
+    <header>
+        <h1> Juan Villanueva Romero</h1>
+        <nav>
+            <ul>
+                <li> <a href="index.html">Home</a> </li>
+                <li> <a href="work_exp.html">Work Experience</a> </li>
+                <li> <a href="portfolio.html">Portfolio</a> </li>
+                <li> <a href="contact.html">Contact me</a> </li>
+            </ul>
+        </nav>
+    </header>
+    <hr/>
+
+    <main>
+        <section>
+            <h2> Contact me </h2>
+            <label> What is the purpose of your contact:</label>
+            <select name="Selection">
+              <optgroup label="Professional Contact">
+                <option value="job">Job Offer</option>
+                <option value="project">Project Proposal</option>
+              </optgroup>
+              <optgroup label="Other">
+                <option value="other">Other Reason</option>
+              </optgroup>
+            </select> 
+            <p> Before providing any more information, was your experience in this website positive? </p>
+            <form name="buttons">
+                <fieldset>
+                    <legend> Select one: </legend>
+                    <label>Yes</label>
+                    <input type="checkbox" name="yes">
+                    <label>No</label>
+                    <input type="checkbox" name="no">
+                </fieldset>
+            </form> <br/>
+            <label>Choose the topic of more interest to you:</label>
+            <input list ="interest" name="interest">
+            <datalist id = "interest">
+                <option value = "Data Science">
+                <option value = "Web Development">
+                <option value = "Other">
+            </datalist> <br/> <br/>
+            <label> Send your message </label>
+            <form>
+                <textarea id="text"></textarea>
+                <button>Submit</button>
+            </form>
+        </section>
+        <section id = "Testing">
+            <h3> Recomendations before you leave </h3>
+            <h4> Some relaxing music </h4>
+            <audio controls>
+                <source src="audio/background_music.mp3">
+            </audio>
+            <h4> Enjoy nature! </h4>
+            <video width="200" controls src="videos/yosemite.mp4"></video>
+            <h4> <code> svg </code> test </h4>
+            <svg width="100" height="100">
+                <circle cx="50" cy="50" r="40" stroke="red" stroke-width="3" fill="blue" />
+            </svg>
+            <h4> Canvas/Script test </h4>
+            <canvas id="testCanvas" width="200" height="100"></canvas>
+            <script>
+                var c = document.getElementById("testCanvas");
+                var ctx = c.getContext("2d");
+                ctx.font = "30px Arial";
+                ctx.fillText("See you soon!", 10, 50);
+            </script>   
+        </section>
+    </main>
+    <hr/>
+
+        <footer>
+            <p> Website created by Juan Villanueva Romero </p>
+            <a href="https://www.linkedin.com/in/juan-villanueva-romero/"> LinkedIn </a>
+            <a href="https://github.com/juan-villa02"> GitHub </a>  
+        </footer>
+
+</body>
+</html>
