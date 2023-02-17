@@ -3,93 +3,51 @@
 <html lang = "en">
 <head>
         <meta charset = "utf-8" />
-        <meta name = "Description" content = "Contact - CSE 134B" />
+        <meta name = "Description" content = "Work Experience - CSE 134B" />
         <title> Juan Villanueva Romero </title>
         <link rel = "icon" href = "images/favicon.ico">
-        <script>
-            
-        </script>
+        <link rel="stylesheet" href="contact.css" type="text/css">
+
 </head>
 
 <body>
     <header>
         <h1> Juan Villanueva Romero</h1>
         <nav>
-            <ul>
-                <li> <a href="index.html">Home</a> </li>
-                <li> <a href="work_exp.html">Work Experience</a> </li>
-                <li> <a href="portfolio.html">Portfolio</a> </li>
-                <li> <a href="contact.html">Contact me</a> </li>
-            </ul>
+            <a id = "homepage" class = "navlink" href="index.html">Home</a> 
+            <a id = "work" class = "navlink" href="work_exp.html">Experience</a>
+            <a id = "portfolio" class = "navlink" href="portfolio.html">Portfolio</a>
+            <a id = "contact" class = "navlink" href="contact.html">Contact</a> 
         </nav>
     </header>
-    <hr/>
-
     <main>
-        <section>
-            <h2> Contact me </h2>
-            <label> What is the purpose of your contact:</label>
-            <select name="Selection">
-              <optgroup label="Professional Contact">
-                <option value="job">Job Offer</option>
-                <option value="project">Project Proposal</option>
-              </optgroup>
-              <optgroup label="Other">
-                <option value="other">Other Reason</option>
-              </optgroup>
-            </select> 
-            <p> Before providing any more information, was your experience in this website positive? </p>
-            <form name="buttons">
-                <fieldset>
-                    <legend> Select one: </legend>
-                    <label>Yes</label>
-                    <input type="checkbox" name="yes">
-                    <label>No</label>
-                    <input type="checkbox" name="no">
-                </fieldset>
-            </form> <br/>
-            <label>Choose the topic of more interest to you:</label>
-            <input list ="interest" name="interest">
-            <datalist id = "interest">
-                <option value = "Data Science">
-                <option value = "Web Development">
-                <option value = "Other">
-            </datalist> <br/> <br/>
-            <label> Send your message </label>
-            <form>
-                <textarea id="text"></textarea>
-                <button>Submit</button>
+        <h2> Contact me </h2>
+        <div id="formcontainer">
+            <form class="contactform" action="/form/submit" method="POST">
+                <label for="firstname">Name</label>
+                <input type="text" id="firstname" name="firstname" placeholder="Type your first name..">
+                <label for="lastname">Last Name</label>
+                <input type="text" id="lastname" name="lastname" placeholder="Type your last name..">
+                <label for="mail">E-mail Address</label>
+                <input type="text" id="e-mmail" name="e-mail" placeholder="Type your e-mail..">
+                <label for="reason">Reason of contact </label>
+                <select id="reason" name="reason">
+                  <option value="offer">Job Offer</option>
+                  <option value="project">Collaborative Project</option>
+                  <option value="other">Other Interests</option>
+                </select>
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Type your message.."></textarea>
+                <input type="submit" value="Submit">
             </form>
-        </section>
-        <section id = "Testing">
-            <h3> Recomendations before you leave </h3>
-            <h4> Some relaxing music </h4>
-            <audio controls>
-                <source src="audio/background_music.mp3">
-            </audio>
-            <h4> Enjoy nature! </h4>
-            <video width="200" controls src="videos/yosemite.mp4"></video>
-            <h4> <code> svg </code> test </h4>
-            <svg width="100" height="100">
-                <circle cx="50" cy="50" r="40" stroke="red" stroke-width="3" fill="blue" />
-            </svg>
-            <h4> Canvas/Script test </h4>
-            <canvas id="testCanvas" width="200" height="100"></canvas>
-            <script>
-                var c = document.getElementById("testCanvas");
-                var ctx = c.getContext("2d");
-                ctx.font = "30px Arial";
-                ctx.fillText("See you soon!", 10, 50);
-            </script>   
-        </section>
+        </div>
     </main>
-    <hr/>
-
-        <footer>
-            <p> Website created by Juan Villanueva Romero </p>
-            <a href="https://www.linkedin.com/in/juan-villanueva-romero/"> LinkedIn </a>
-            <a href="https://github.com/juan-villa02"> GitHub </a>  
-        </footer>
-
+    <footer>
+        <p><i> Website created by Juan Villanueva Romero &copy</i></p>
+        <div id = "footerlinks">
+            <a class = "footerlink" href="https://www.linkedin.com/in/juan-villanueva-romero/"> LinkedIn </a>
+            <a class = "footerlink" href="https://github.com/juan-villa02"> GitHub </a> 
+        </div>
+    </footer>
 </body>
 </html>

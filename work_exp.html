@@ -6,72 +6,56 @@
         <meta name = "Description" content = "Work Experience - CSE 134B" />
         <title> Juan Villanueva Romero </title>
         <link rel = "icon" href = "images/favicon.ico">
-        <script>
-            
-        </script>
+        <link rel="stylesheet" href="experience.css" type="text/css">
+
 </head>
 
 <body>
     <header>
         <h1> Juan Villanueva Romero</h1>
         <nav>
-            <ul>
-                <li> <a href="index.html">Home</a> </li>
-                <li> <a href="work_exp.html">Work Experience</a> </li>
-                <li> <a href="portfolio.html">Portfolio</a> </li>
-                <li> <a href="contact.html">Contact me</a> </li>
-            </ul>
+            <a id = "homepage" class = "navlink" href="index.html">Home</a> 
+            <a id = "work" class = "navlink" href="work_exp.html">Experience</a>
+            <a id = "portfolio" class = "navlink" href="portfolio.html">Portfolio</a>
+            <a id = "contact" class = "navlink" href="contact.html">Contact</a> 
         </nav>
     </header>
-    <hr/>
-
-    <!-- I have included this styling only because of the requirement of using the tag  -->
-    <style>
-        table, th, td {
-            border: 1px solid;}
-    </style>
-
     <main>
-        <div>
-            <h2> Work Experience </h2>
-            <template>
-                <h3> Personal Information </h3>
-                <p> E-Mail: </p>
-                <p> Phone Number: </p>
-            </template>
-            <h3> CV/Resume </h3>
-            <table>
-                <caption> Academics Timeline </caption>
-                <colgroup>
-                    <col style="background-color: gray;">
-                </colgroup>
-                <tr>
-                  <th>Year</th>
-                  <th> Information </th>
-                </tr>
-                <tr>
-                    <td>2022-2023</td>
-                    <td>Exchange student at University of California San Diego</td>
-                  </tr>
-                <tr>
-                  <td>2020-2024</td>
-                  <td>Data Science and Engineering Bachelor Degree — University Carlos III, Madrid, Spain — Grade: 8,36/10</td>
-                </tr>
-                <tr>
-                    <td>2018-2020</td>
-                    <td>International Baccalaureate (IB) - Burgos, Spain</td>
-                  </tr>
-              </table>
+        <div id = "personalinfo">
+            <img id = "personalImg" src="images/me.jpeg" width="25%" height="50%" alt="Juan Villanueva Romero"/>
+            <div id = "personaldata"> 
+                <h2> Personal Information </h2>
+                <ul class= "infolists">
+                    <li> E-mail: juanvill175@gmail.com</li>
+                    <li> Phone Number: +1 (858) 241-4438</li>
+                    <li> University: University of California San Diego</li>
+                    <li> Major: Data Science and Engineering</li>
+                </ul>
+            </div>       
+        </div>
+        <h2 id = "timelineheader">Academics Timeline</h2>
+        <div id = "timeline">
+            <div class="left_cont">
+                <h3> 2022-23 </h3>
+                <p>Abroad Student in UC San Diego, California — Awarded with a Scholarship of Banco Santander.</p>
+            </div>
+            <div class="right_cont">
+                <h3> 2020-24 </h3>
+                <p>Data Science and Engineering Bachelor's Degree at University Carlos III, Madrid, Spain — Grade: 8,36/10.</p>
+            </div>
+            <div class="left_cont">
+                <h3> 2018-20 </h3>
+                <p>International Baccalaureate (Diploma Programme) at IES López de Mendoza - Burgos, Spain.</p>
+            </div>
         </div>
     </main>
-    <hr/>
-
-        <footer>
-            <p> Website created by Juan Villanueva Romero </p>
-            <a href="https://www.linkedin.com/in/juan-villanueva-romero/"> LinkedIn </a>
-            <a href="https://github.com/juan-villa02"> GitHub </a>  
-        </footer>
-
+    <footer>
+        <p><i> Website created by Juan Villanueva Romero &copy</i></p>
+        <div id = "footerlinks">
+            <a class = "footerlink" href="https://www.linkedin.com/in/juan-villanueva-romero/"> LinkedIn </a>
+            <a class = "footerlink" href="https://github.com/juan-villa02"> GitHub </a> 
+        </div>
+    </footer>
 </body>
 </html>
 
