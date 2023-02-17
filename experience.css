@@ -158,7 +158,6 @@ div#timeline::after {
 }
 
   /* Fix the circle for containers on the left side */
-
 .left_cont::after {
     content: '';
     position: absolute;
