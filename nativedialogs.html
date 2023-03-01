@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name = "Description" content = "Native Dialogs Page" />
+        <title> Native Dialogs </title>
+        <link rel = "icon" href = "images/favicon.ico">
+        <script type="text/javascript" src="DOMPurify-main/dist/purify.min.js"></script>
+    </head>
+    <body>
+        <h1> Dialogs </h1>
+        <button type="button" id = "alertButton">Alert</button>
+        <button type="button" id = "confirmButton">Confirm</button>
+        <button type="button" id = "promptButton">Prompt</button>
+        <button type="button" id = "safepromptButton">Safe prompt</button>
+        <hr/>
+        <output id = "outputResult"></output>
+        
+        <script>
+    
+            let alertButton = document.getElementById("alertButton");
+            alertButton.addEventListener("click", function() {
+                alert("Alert pressed!");
+            });
+
+            let confirmButton = document.getElementById("confirmButton");
+
+            confirmButton.addEventListener("click", () => {
+                let confirmText = "Do you confirm this?";
+                if (confirm(confirmText) == true) {
+                    confirmText = true;
+                } else {
+                    confirmText = false;
+                }
+                document.getElementById("outputResult").innerHTML = "The value returned by the confirm method is: " + confirmText;
+            });
+
+            let promptButton = document.getElementById("promptButton");
+
+            promptButton.addEventListener("click", () => {
+                let promptText = "What is your name?";
+                let promptOutput = prompt(promptText)
+                if (promptOutput == null) {
+                    promptOutput = "User didn't enter anything";
+                } else {
+                    promptOutput = `Hello ${promptOutput}`;
+                }
+                document.getElementById("outputResult").innerHTML = promptOutput;
+            });
+
+            let safepromptButton = document.getElementById("safepromptButton");
+
+            safepromptButton.addEventListener("click", () => {
+                let promptText = "What is your name?";
+                let promptOutput = prompt(promptText);
+                let cleanOutput =  DOMPurify.sanitize(promptOutput);
+                if (cleanOutput == null) {
+                    cleanOutput = "User didn't enter anything";
+                } else {
+                    cleanOutput = `Hello ${cleanOutput}`;
+                }
+                document.getElementById("outputResult").innerHTML = cleanOutput;
+            });
+
+        </script>
+        
+    </body>
+</html>
+
+<!--  <b onmouseover = "alert('hacked')">Juan</b>  -->
