@@ -10,3 +10,7 @@ Now, the website perfectly displays on mobile phones and tablets, having a cente
 
 # Third-party addition
 
+As a third-party addition, I decided to embed two LinkedIn posts from my personal acount.
+
+Additionally, after including these elements into my HTML I decided to alter the order of the homepage, displaying the social posts first. This also
+implied setting the CSS for these new elements, as well as adding new media queries so that the web still has a responsive design.

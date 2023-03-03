@@ -102,6 +102,26 @@ div#aboutme>p{
     margin-right: 1em;
 }
 
+div#socialPosts{
+    display: flex;
+    flex-direction: row;
+    text-align:justify;
+    justify-content: space-between;
+    font-size:large;
+    margin-left: 2em;
+    margin-right: 2em;
+    margin-bottom: 3em;
+    max-width: 80%;
+    gap: 2em;
+}
+
+.post {
+    max-width: 60%;
+    padding-top: 0.5em;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
 footer{
     width: 100%;
     margin-top: auto;
@@ -186,5 +206,22 @@ footer>p{
     div#skillscaptions{
         display: none;
     }
+
+    div#socialPosts{
+        display: flex;
+        flex-direction: column;
+        gap: 4em;
+        margin-left: 14%;
+        margin-right: 34%;
+        margin-bottom: 3em;
+        align-items: left;
+    }
+
+    .post{
+        width:min-content;
+        max-width: 40%;
+    }
 }
+
+
 
