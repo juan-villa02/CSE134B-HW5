@@ -128,7 +128,7 @@ input[type=submit]:hover {
 }
 
 /* Media queries - Responsive timeline on screens less than 800px wide */
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 950px) {
 
     /* Keep header visible and centered */
 

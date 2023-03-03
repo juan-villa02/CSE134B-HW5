@@ -89,7 +89,7 @@ div#projects{
     gap: 6em;
     padding-top: 0;
     padding-left: 8em;
-    padding-bottom: 3em;
+    padding-bottom: 1em;
     
 }
 
@@ -120,8 +120,8 @@ figcaption{
     }
 
     header{
-        justify-content: space-between;
-        padding-left: 0.77em;
+        justify-content: center;
+        padding-left: 2em;
     }
 
     div#projects{
@@ -131,6 +131,7 @@ figcaption{
         max-width: 100%;
         gap: 2em;
         margin-right: 30%;
+        padding-left: 30%;
     }
 
     .project{
@@ -141,7 +142,7 @@ figcaption{
 
     .project_img{
         width: 100%;
-        padding-right: 8.5em;
+        padding-right: 8em;
     }
 }
 
@@ -185,6 +186,5 @@ footer>p{
     background-color: #fff;
     color: #333;
 }
-
 
 

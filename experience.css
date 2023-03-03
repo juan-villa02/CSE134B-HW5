@@ -215,7 +215,7 @@ div#timeline::after {
 
 
 /* Media queries - Responsive timeline on screens less than 800px wide */
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 950px) {
 
     /* Keep header visible and centered */
     h1{
@@ -234,7 +234,7 @@ div#timeline::after {
     }
     /* Make sure that all arrows are pointing leftwards */
     .left_cont::before, .right_cont::before {
-        left: 15em;
+        left: 120%;
         border: medium solid rgb(184, 184, 184);
         border-width: 10px 10px 10px 0;
         border-color: transparent rgb(0, 0, 0) transparent transparent;
@@ -242,7 +242,7 @@ div#timeline::after {
 
     /* Make sure all circles are at the same spot */
     .left_cont::after, .right_cont::after {
-        left: 17em;
+        left: 130%;
     }
 
     /* Make all right containers behave like the left ones */
