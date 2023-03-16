@@ -14,8 +14,13 @@
         <main>
             <div id="formcontainer">
                 <form id="methodtestForm">
+                    <label for="requestSelect">Request Method</label>
+                    <select id="requestSelect" name="requestSelect">
+                        <option>Fetch API</option>
+                        <option>XMLHttpRequest</option>
+                    </select>
                     <label for="id">ID</label>
-                    <input type="number" id="id" name="id">
+                    <input type="number" id="id" name="id" placeholder="Article ID..">
                     <label for="article_name">Article Name</label>
                     <input type="text" id="article_name" name="article_name" placeholder="Article name..">
                     <label for="article_body">Article Body</label>
@@ -28,8 +33,8 @@
                 <button id="putBtn">Put</button>
                 <button id="deleteBtn">Delete</button>
             </div>
-            <pre><output id="response"></output></pre>
-            <script type="text/javascript" src="methodtest.js"></script>
+            <output id="response"></output>
+            <script type="module" src="methodtest.js"></script>
         </main>
     </body>
 </html>

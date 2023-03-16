@@ -16,8 +16,10 @@ class ButtonCount extends HTMLElement {
 
     // Increase the counter when clicking the button
     button.addEventListener('click', () => {
-    this.clickCount++;
-    button.textContent = `Times clicked: ${this.clickCount}`;
+
+        this.clickCount++;
+        button.textContent = `Times clicked: ${this.clickCount}`;
+        
     });
 
     // Append the button to the shadow root

@@ -62,11 +62,7 @@ button:hover {
   background-color: #6fe8d7;
 }
 
-pre {
-    padding-top: 3em;
-}
-
-table {
-    border: solid #000000;
-    background-color: white;
+output#response {
+    margin: auto;
+    padding: 2em;
 }
